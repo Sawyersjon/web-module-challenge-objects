@@ -15,9 +15,11 @@ The function should:
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
 
-function createMenuItem(/*Your code here*/){
-    /*Your code here*/
+function createMenuItem(name, price, category){
+  return ({name: name, price: price, category: category})
 }
+
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Invoke your function!
@@ -27,7 +29,13 @@ Test your createMenuItems function by doing the following:
   3. Log each returned object to the console  
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
-*/
+  */
+  const chickenSandwich = {name: 'Chicken Sandwich', price: 8, category: 'Lunch'};
+  const steak = {name: 'Steak', price: 20, category: 'Dinner'};
+  const pancakes = {name: 'Pancakes', price: 6, category: 'Breakfast'};
+createMenuItem('Burger', 8, 'Lunch');
+createMenuItem('Steak', 20, 'Dinner');
+createMenuItem('Pancakes', 6, 'Breakfast');
 
 
 
@@ -48,11 +56,18 @@ export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  /*Your code here*/
 }
 
+function discount(profession){
+  if(profession === "teacher"){
+    return(burger.price * .75)
+  }
+  else{
+    return(burger.price * .9)
+  }
+}
 
-
+console.log(discount("teacher"))
 ///////////////Reviews (MVP)///////////////////
 const reviews = [
     {name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and wonderful vegan options!"},
