@@ -132,11 +132,13 @@ Use the getLastReview function below to do the following:
   For example: getLastReview(reviews) would return: "Reyna gave the restaurant a 3.5 star review, and their feedback was: this place is chill with really cool people, great for getting work done on weekdays".
 */
 
-
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
-} 
-
+function getLastReview(reviews) {
+  let b = reviews.length - 1;
+  let name = reviews[b].name;
+  let rating = reviews[b].rating;
+  let feedback = reviews[b].feedback;
+  return `${name} gave the restaurant a ${rating} star review, and their feedback was: ${feedback}`;
+}
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
