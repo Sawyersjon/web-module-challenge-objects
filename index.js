@@ -56,18 +56,16 @@ export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
+  discount: function(customer){
+    if(customer === 'teacher' || customer === 'students'){
+      return (this.price * .75)
+    }
+    else{
+      return (this.price * .9)
+    }
+  }
 }
 
-function discount(profession){
-  if(profession === "teacher"){
-    return(burger.price * .75)
-  }
-  else{
-    return(burger.price * .9)
-  }
-}
-
-console.log(discount("teacher"))
 ///////////////Reviews (MVP)///////////////////
 const reviews = [
     {name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and wonderful vegan options!"},
@@ -85,7 +83,7 @@ Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
 
-
+console.log(reviews('Julius'))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
