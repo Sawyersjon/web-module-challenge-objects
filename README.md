@@ -24,7 +24,7 @@ You've been contracted by a restaurant to start building out their website. Befo
 
 ### Task 2: MVP
 
-Find the file `index.js` and complete the tasks until your returns look like the expected returns. Do not use any of the forbidden methods!
+Find the fil `index.js` and complete the tasks until your returns look like the expected returns. Do not use any of the forbidden methods!
 
 ### Task 3: Stretch
 
